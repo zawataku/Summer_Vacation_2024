@@ -1,4 +1,5 @@
 import random
+from deer_aa import aa_print
 
 # list。ここから7つ選んで、タイトルを完成させる
 shikanoko = ["しか", "のこ", "こし", "たん"]
@@ -17,6 +18,7 @@ while True:
     if bool == True:
         print(output)
         print("鹿")
+        aa_print()
         break
     else:
         print(output)
