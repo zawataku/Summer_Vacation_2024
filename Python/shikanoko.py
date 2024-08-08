@@ -1,11 +1,22 @@
 import random
+
+# list。ここから7つ選んで、タイトルを完成させる
 shikanoko = ["しか", "のこ", "こし", "たん"]
 
-output = ""
+# listから14文字のランダムな文字列を作成する関数 # ちなみにantlerはツノのこと
+def antler():
+    output = ""
+    for _ in range(7):
+        output += random.choice(shikanoko)
+    if output == "しかのこのこのここしたんたん":
+            return True, output
+    return False, output
 
-while output != "しかのこのこのここしたんたん":
-    output += random.choice(shikanoko)
-    print(output)
-    if "しかのこのこのここしたんたん" in output:
+while True:
+    bool, output = antler()
+    if bool == True:
+        print(output)
         print("鹿")
         break
+    else:
+        print(output)

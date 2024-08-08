@@ -1,0 +1,8 @@
+# 変更元ファイル
+/Python/shikanoko_old.py
+
+# imgファイル
+/Python/img/
+
+# pycache
+*/__pycache__
