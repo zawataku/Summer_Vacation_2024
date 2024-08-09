@@ -6,3 +6,6 @@
 
 # pycache
 */__pycache__
+
+# execute-time.csv
+*/execute-time.csv
