@@ -1,5 +1,7 @@
 import random
 import time
+import csv
+import numpy as np
 from deer_aa import aa_print
 
 # list。ここから7つ選んで、タイトルを完成させる
@@ -28,3 +30,15 @@ while True:
         break
     else:
         print(output)
+
+with open('./Python/execute-time.csv','a',newline="") as f:
+    writer = csv.writer(f)
+    writer.writerow([time_diff])
+
+with open('./Python/execute-time.csv','r',newline="") as f:
+    times = []
+    reader = csv.reader(f)
+    for row in reader:
+        times.append(float(row[0]))
+    average_time = np.average(times)
+    print(average_time)
