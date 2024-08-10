@@ -1,11 +1,5 @@
-# 変更元ファイル
-/Python/shikanoko_old.py
-
-# imgファイル
-/Python/img/
-
 # pycache
-*/__pycache__
+*/shikanoko/__pycache__
 
 # execute-time.csv
-*/execute-time.csv
+*/shikanoko/execute-time.csv
