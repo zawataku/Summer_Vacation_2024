@@ -1,3 +1,5 @@
+/** 1から100まで出力するプログラム */
+
 package Java.Increment;
 
 /**
